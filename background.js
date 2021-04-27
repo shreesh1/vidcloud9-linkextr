@@ -26,9 +26,6 @@ function listener(details) {
     //console.log(k);
     var doodexp = /https:\\\/\\\/d.*\"/g;
     var dudregex = new RegExp(doodexp);
-    
-    var f = details.url.match(/tle=.*?&/g)[0]; 
-    console.log(f.slice(4,f.length-1).replace(/\+/g," "));
     if(k.match(dudregex)){
     console.log(k.match(dudregex)[0].replace(/\\|\"/g,""));
   }
